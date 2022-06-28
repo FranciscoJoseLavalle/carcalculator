@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora para auto</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora para el auto</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Consumo de combustible</h2>
+            <form class="formCombustible">
+                <div>
+                    <label for="distancia">Distancia a recorrer en km</label>
+                    <input type="number" placeholder="Distancia a recorrer en km" id="distancia" class="distancia">
+                </div>
+                <div>
+                    <label for="precio">Precio por litro</label>
+                    <input type="number" placeholder="Precio por litro" id="precio" class="precio">
+                </div>
+                <div>
+                    <label for="litros1">Litros cada 100km (Promedio 9)</label>
+                    <input type="number" placeholder="Litros cada 100km" id="litros1" class="litros">
+                </div>
+                <button class="consumo">Calcular</button>
+            </form>
+            <div class="resultado">
+                <p class="resultadoCombustible">Litros a consumir: 0.00</p>
+                <p class="resultadoPrecio">Precio por 0.00 litros: $0.00</p>
+            </div>
+        </section>
+        <section>
+            <h2>Duración del tanque</h2>
+            <form class="formDuracion">
+                <div>
+                    <label for="capacidad">Capacidad del tanque</label>
+                    <input type="number" id="capacidad" placeholder="Capacidad del tanque" class="capacidadDuracion">
+                </div>
+                <div>
+                    <label for="litros">Litros cada 100km (Promedio 9)</label>
+                    <input type="number" placeholder="Litros cada 100km" id="litros" class="litrosDuracion">
+                </div>
+                <button class="duracion">Calcular</button>
+            </form>
+            <div class="resultado">
+                <p class="resultadoDuracion">Duración total del tanque: 0.00km</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
